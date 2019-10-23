@@ -5,10 +5,10 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Navigasi</h4>
                     <ul>
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Galeri</a></li>
-                        <li><a href="#">Berita</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
+                        <li><a href="<?= site_url('welcome/view/beranda') ?>">Beranda</a></li>
+                        <li><a href="<?= site_url('welcome/view/galeri') ?>">Galeri</a></li>
+                        <li><a href="<?= site_url('welcome/view/berita') ?>">Berita</a></li>
+                        <li><a href="<?= site_url('welcome/view/kontak') ?>">Kontak Kami</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 footer-contact">
