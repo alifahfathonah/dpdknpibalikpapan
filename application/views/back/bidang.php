@@ -5,7 +5,8 @@
             <div class="card shadow mb-4">
                 <div class="card-header bg-info">
                     <h6 class="m-0 font-weight-bold text-white">
-                        Manajemen Data Pengurus Bidang
+                        Data Pengurus Bidang
+                        <a href="<?= site_url('admin/view/bidang-tambah') ?>" class="btn btn-sm btn-warning float-right"><i class="fas fa-plus fa-sm"></i> &nbsp; Tambah</a>
                     </h6>
                 </div>
                 <div class="card-body">
@@ -34,7 +35,6 @@
 <script>
     $(document).ready(function () {
         table = $('#dataTable').DataTable({
-            "dom": "Brt",
             "processing": true,
             "serverside": true,
             "ajax": {
@@ -43,6 +43,21 @@
             }
         });
     });
+
+    function deleteData(id) {
+        if (confirm("Apakah Anda Yakin Ingin Menghapus Data ?")) {
+            $.ajax({
+                url: "<?php echo site_url('bidang/run/delete/') ?>"+id,
+                type: "POST",
+                success: function(data){
+                    table.ajax.reload();
+                },
+                error: function(){
+                    alert('data tidak dapat menghapus');
+                }
+            });
+        }
+    }
 </script>
 
 </body></html>
