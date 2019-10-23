@@ -47,7 +47,7 @@
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <h1 class="text-light">
-                    <a href="" class="scrollto"><img src="<?= base_url('asset/front/img/logo_knpi.png') ?>" alt="" class="img-fluid"></a>
+                    <a href="" class="scrollto"><img src="<?= base_url('favicon.png') ?>" alt="" class="img-fluid"></a>
                     <a href=""><span>KNPI</span></a>
                 </h1>
             </div>

@@ -6,7 +6,7 @@
     <section id="intro" class="clearfix">
         <div class="container">
             <div class="intro-img">
-                <img src="<?= base_url('asset/front/img/logo_knpi.png') ?>" alt="" class="img-fluid float-right" width="280">
+                <img src="<?= base_url('favicon.png') ?>" alt="" class="img-fluid float-right" width="280">
             </div>
             <div class="intro-info">
                 <h2><br>KNPI<br>Kota Balikpapan</h2>
