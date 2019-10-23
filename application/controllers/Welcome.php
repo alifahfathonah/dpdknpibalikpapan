@@ -17,6 +17,7 @@ class Welcome extends CI_Controller {
         $this->load->model('informasi_model');
         $this->load->model('pengurus_model');
 		$this->load->model('organisasi_model');
+		$this->load->model('bidang_model');
 		
     }
 
@@ -41,8 +42,9 @@ class Welcome extends CI_Controller {
 		elseif ($look == "susunan") {
 			$parsing = array( 
 				'pengurus' 	=> $this->pengurus_model->get_data('all',null), 
+				'bidang' 	=> $this->bidang_model->get_data('all',null), 
 				'informasi' => $this->informasi_model->get_data('first',null), 
-				'pk' 			=> $this->organisasi_model->get_data('where_jns','PK'), 
+				'pk' 		=> $this->organisasi_model->get_data('where_jns','PK'), 
 			);
 			$this->load->view('front/susunan',$parsing);
 		}

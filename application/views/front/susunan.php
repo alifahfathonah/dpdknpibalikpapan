@@ -30,7 +30,29 @@
                 </header>
                 <div class="row">
                     <div class="col-lg-12">
-                        <?= $informasi->susuninf ?>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="5%">#</th>
+                                    <th width="15%">Foto</th>
+                                    <th width="40">Nama</th>
+                                    <th width="35%">Jabatan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    $no = 1;
+                                    foreach($bidang as $bdg): 
+                                ?>
+                                <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td align="center"><img class="img-fluid" src="<?= base_url('asset/bidang/'.$bdg->gbrbdng) ?>" alt="foto pengurus" width="100" height="125"></td>
+                                    <td><?= $bdg->namabdng ?></td>
+                                    <td><?= $bdg->jbtnbdng ?></td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
