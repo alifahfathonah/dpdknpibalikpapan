@@ -24,6 +24,7 @@ class Admin extends CI_Controller {
         $this->load->model('pengurus_model');
         $this->load->model('informasi_model');
         $this->load->model('organisasi_model');
+        $this->load->model('bidang_model');
     }
 
     /**
@@ -141,22 +142,22 @@ class Admin extends CI_Controller {
             );
             $this->load->view('back/organisasi_susunan', $parsing);
         }
-        // view khusus untuk struktur
-        elseif ($look == "struktur") {
-            $this->load->view('back/struktur');
+        // view khusus untuk bidang
+        elseif ($look == "bidang") {
+            $this->load->view('back/bidang');
         }
-        elseif ($look == "struktur-tambah") {
+        elseif ($look == "bidang-tambah") {
             $parsing = array(
                 'organisasi' => $this->organisasi_model->get_data('all',null), 
             );
-            $this->load->view('back/struktur_tambah', $parsing);
+            $this->load->view('back/bidang_tambah', $parsing);
         }
-        elseif ($look == "struktur-ketua") {
+        elseif ($look == "bidang-ubah") {
             $parsing = array(
                 'organisasi' => $this->organisasi_model->get_data('all',null), 
-                'struktur' => $this->struktur_model->get_data('where',$id), 
+                'bidang' => $this->bidang_model->get_data('where',$id), 
             );
-            $this->load->view('back/struktur_ketua', $parsing);
+            $this->load->view('back/bidang_ubah', $parsing);
         }
         // view khusus untuk pengurus
         elseif ($look == "pengurus") {

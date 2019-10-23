@@ -62,7 +62,7 @@
             </a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('admin/view/pengurus') ?>">
+            <a class="nav-link" href="<?php echo site_url('admin/view/bidang') ?>">
                <i class="fas fa-fw fa-sitemap"></i>
                <span>Manejemen Pengurus</span>
             </a>
