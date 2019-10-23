@@ -34,9 +34,9 @@ class Bidang extends CI_Controller {
 
             $row[]  = '<center>'.$no++.'</center>';
             $row[]  = $list->namabdng;
-            $row[]  = $list->jbtnbdng;
+            $row[]  = '<center>'.$list->jbtnbdng.'</center>';
             $row[]  = '<center>
-				<img src="'.site_url('asset/bidang/').$list->gbrbdng.'" width="80" height="50">
+				<img src="'.site_url('asset/bidang/').$list->gbrbdng.'" width="100" height="125">
             </center>'
             ;
             $row[]  = '
@@ -44,6 +44,9 @@ class Bidang extends CI_Controller {
                     <a href="'.site_url('admin/view/bidang-ubah/').$list->idbdng.'" class="btn btn-sm btn-success">
                         <i class="fas fa-edit fa-sm"></i>
                     </a>
+                    <button onclick="deleteData('.$list->idbdng.')"  class="btn btn-sm btn-danger">
+                        <i class="fas fa-trash fa-sm"></i>
+                    </button>
                 </center>
             ';
 
@@ -62,15 +65,15 @@ class Bidang extends CI_Controller {
     {
         // masukkan data input post HTML ke dalam array jika inputan gambar tidak kosong
         $data1 = array(
-            'namabdng'   => $this->input->post('txt_nama',TRUE),
-            'jbtnbdng'   => $this->input->post('txt_jbtn',TRUE),
+            'namabdng'   => ucwords($this->input->post('txt_nama',TRUE)),
+            'jbtnbdng'   => ucwords($this->input->post('txt_jbtn',TRUE)),
             'gbrbdng'    => $this->upload_image(),
         );
 
         // masukkan data input post HTML ke dalam array jika inputan gambar kosong
         $data2 = array(
-            'namabdng'   => $this->input->post('txt_nama',TRUE),
-            'jbtnbdng'   => $this->input->post('txt_jbtn',TRUE),
+            'namabdng'   => ucwords($this->input->post('txt_nama',TRUE)),
+            'jbtnbdng'   => ucwords($this->input->post('txt_jbtn',TRUE)),
         );
 
         // pengecekan aksi apa yang dipakai ?
@@ -129,8 +132,8 @@ class Bidang extends CI_Controller {
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
 			$config['quality']= '100%';
-			$config['width']= 50;
-			$config['height']= 75;
+			$config['width']= 720;
+			$config['height']= 980;
             $config['new_image']= './asset/bidang/'.$gbr['file_name'];
             
             // load library resize codeigniter

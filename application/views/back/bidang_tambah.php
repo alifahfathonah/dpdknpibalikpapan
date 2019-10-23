@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="card shadow mb-4">
                 <div class="card-header bg-info py-3">
-                    <h6 class="m-0 font-weight-bold text-white">Tambah Data Pengurus Bidang</h6>
+                    <h6 class="m-0 font-weight-bold text-white">Tambah Data Struktur Pengurus</h6>
                 </div>
                 <div class="card-body">
                     <form action="<?= site_url('bidang/run/insert') ?>" method="POST" enctype="multipart/form-data">
@@ -20,7 +20,7 @@
                                     <label for="txt_gmbr" class="col-sm-2 col-form-label">Gambar</label>
                                     <div class="col-sm-10">
                                         <input type="file" class="form-control form-control-sm" id="txt_gmbr" name="txt_gmbr">
-                                        <i>Gambar Harus Beresolusi 1280x720 Pixel</i>
+                                        <i>Gambar Harus Beresolusi 720x980 Pixel</i>
                                     </div>
                                 </div>
                                 <div class="form-group row">

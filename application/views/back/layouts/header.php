@@ -64,7 +64,7 @@
          <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('admin/view/bidang') ?>">
                <i class="fas fa-fw fa-sitemap"></i>
-               <span>Manejemen Pengurus</span>
+               <span>Manejemen Struktur</span>
             </a>
          </li>
          <li class="nav-item">

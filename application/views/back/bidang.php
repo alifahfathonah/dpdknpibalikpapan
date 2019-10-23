@@ -5,7 +5,7 @@
             <div class="card shadow mb-4">
                 <div class="card-header bg-info">
                     <h6 class="m-0 font-weight-bold text-white">
-                        Data Pengurus Bidang
+                        Data Struktur Pengurus
                         <a href="<?= site_url('admin/view/bidang-tambah') ?>" class="btn btn-sm btn-warning float-right"><i class="fas fa-plus fa-sm"></i> &nbsp; Tambah</a>
                     </h6>
                 </div>
