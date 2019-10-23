@@ -103,14 +103,12 @@
 
         CKEDITOR.replace( 'txt_susun',{
                 filebrowserBrowseUrl:roxyFileman+'/index.html',
-                filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image',
-                removeDialogTabs: 'link:upload;image:upload'
+                filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image'
         }); 
 
         CKEDITOR.replace( 'txt_sjrh',{
                 filebrowserBrowseUrl:roxyFileman+'/index.html',
-                filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image',
-                removeDialogTabs: 'link:upload;image:upload'
+                filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image'
         }); 
 
     });
