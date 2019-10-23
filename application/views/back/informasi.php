@@ -61,14 +61,6 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group row">
-                                            <label for="txt_susun" class="col-sm-2 col-form-label">Susunan</label>
-                                            <div class="col-sm-10">
-                                                <textarea name="txt_susun" id="txt_susun" class="form-control form-control-sm"><?= $informasi->susuninf ?></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group row">
                                             <label for="txt_sjrh" class="col-sm-2 col-form-label">Sejarah KNPI</label>
                                             <div class="col-sm-10">
                                                 <textarea name="txt_sjrh" id="txt_sjrh" class="form-control form-control-sm"><?= $informasi->sjrhinf ?></textarea>
@@ -100,12 +92,6 @@
     var roxyFileman = '<?php echo base_url('asset/vendor/fileman/') ?>'; 
 
     $(document).ready(function () {
-
-        CKEDITOR.replace( 'txt_susun',{
-                filebrowserBrowseUrl:roxyFileman+'/index.html',
-                filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image'
-        }); 
-
         CKEDITOR.replace( 'txt_sjrh',{
                 filebrowserBrowseUrl:roxyFileman+'/index.html',
                 filebrowserImageBrowseUrl:roxyFileman+'/index.html?type=image'

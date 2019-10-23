@@ -56,6 +56,18 @@
 
          <!-- Nav Item - Pages Collapse Menu -->
          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('admin/view/pengurus') ?>">
+               <i class="fas fa-fw fa-sitemap"></i>
+               <span>Pengurus Utama</span>
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('admin/view/pengurus') ?>">
+               <i class="fas fa-fw fa-sitemap"></i>
+               <span>Manejemen Pengurus</span>
+            </a>
+         </li>
+         <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('admin/view/berita') ?>">
                <i class="fas fa-fw fa-newspaper"></i>
                <span>Manejemen Berita</span>
@@ -65,12 +77,6 @@
             <a class="nav-link" href="<?php echo site_url('admin/view/galeri') ?>">
                <i class="fas fa-fw fa-file-image"></i>
                <span>Manejemen Galeri</span>
-            </a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('admin/view/pengurus') ?>">
-               <i class="fas fa-fw fa-sitemap"></i>
-               <span>Manejemen Pengurus</span>
             </a>
          </li>
          <li class="nav-item">
@@ -84,14 +90,7 @@
                <i class="fas fa-fw fa-envelope"></i>
                <span>Manejemen Kontak</span>
             </a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('admin/view/informasi') ?>">
-               <i class="fas fa-fw fa-exclamation-triangle"></i>
-               <span>Manejemen Informasi</span>
-            </a>
-         </li>
-         
+         </li>         
 
          <!-- Divider -->
          <hr class="sidebar-divider d-none d-md-block">
@@ -132,6 +131,15 @@
                   <li class="nav-item dropdown no-arrow mx-1">
                      <a class="nav-link dropdown-toggle" href="<?php echo site_url('welcome/view/beranda') ?>" target="_blank">
                         <i class="fas fa-paper-plane fa-fw"></i> &nbsp; Ke Website
+                     </a>
+                  </li>
+                 
+                  <div class="topbar-divider d-none d-sm-block"></div>
+
+                  <!-- Nav Item - setting user -->
+                  <li class="nav-item dropdown no-arrow mx-1">
+                     <a class="nav-link dropdown-toggle" href="<?php echo site_url('admin/view/informasi') ?>">
+                        <i class="fas fa-exclamation-triangle fa-fw"></i> &nbsp; Informasi KNPI
                      </a>
                   </li>
                   
