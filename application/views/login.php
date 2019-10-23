@@ -34,6 +34,7 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
+                                        <img src="<?= base_url('favicon.png') ?>" alt="DPD KNPI Balikpapan" width="75"><br><br>
                                         <h1 class="h4 text-gray-900 mb-4"><?= TITLE_BAR ?></h1>
                                     </div>
                                     <form class="user" action="<?= site_url('auth/login') ?>" method="post">
