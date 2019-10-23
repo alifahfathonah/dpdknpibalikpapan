@@ -20,6 +20,7 @@
                                     <label for="txt_gmbr" class="col-sm-2 col-form-label">Gambar</label>
                                     <div class="col-sm-10">
                                         <input type="file" class="form-control form-control-sm" id="txt_gmbr" name="txt_gmbr">
+                                        <i>Gambar Harus Beresolusi 1280x720 Pixel</i>
                                     </div>
                                 </div>
                                 <div class="form-group row">

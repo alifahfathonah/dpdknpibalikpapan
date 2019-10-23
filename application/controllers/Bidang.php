@@ -129,8 +129,8 @@ class Bidang extends CI_Controller {
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
 			$config['quality']= '100%';
-			$config['width']= 400;
-			$config['height']= 400;
+			$config['width']= 50;
+			$config['height']= 75;
             $config['new_image']= './asset/bidang/'.$gbr['file_name'];
             
             // load library resize codeigniter
